@@ -1,8 +1,8 @@
 import React from "react";
 import {
-  Text,
   TouchableOpacity,
   TouchableOpacityProps,
+  Text,
   ColorValue,
   ActivityIndicator,
 } from "react-native";
@@ -28,8 +28,8 @@ export function Button({
 }: Props) {
   return (
     <TouchableOpacity
-      activeOpacity={0.7}
       style={[styles.button, { backgroundColor }]}
+      activeOpacity={0.7}
       disabled={isLoading}
       {...rest}
     >
